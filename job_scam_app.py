@@ -5,7 +5,9 @@ import joblib
 import sqlite3
 from datetime import datetime
 
-app = Flask(__name__)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
+
 
 # Load the trained model and text vectorizer
 model = joblib.load("job_scam_model.pkl")
