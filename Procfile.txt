@@ -1,1 +1,1 @@
-web: python job_scam_app.py
+web: gunicorn job_scam_app:app
